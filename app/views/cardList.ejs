@@ -1,0 +1,21 @@
+<%- include('header') %>
+
+<h1><%= title %></h1>
+
+<div class="cardsContainer">
+  <% for (const card of cards) { %>
+    
+    <div class="card">
+      <a href="/card/<%= card.id %>">
+        <img src="/visuals/<%= card.visual_name %>" alt="<%= card.name %> illustration">
+        <p class="cardName"><%= card.name %></p>
+      </a>
+      <a class="link--addCard" title="Ajouter au deck" href="/deck/add/<%= card.id %>">[ + ]</a>
+      <a class="link--removeCard" title="Supprimer du deck" href="/deck/remove/<%=card.id %>">[ - ]</a>
+    </div>
+
+  <% } %>
+</div>
+
+
+<%- include('footer') %>

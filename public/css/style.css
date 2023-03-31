@@ -1,0 +1,123 @@
+
+.header {
+  background-color: purple;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.header .sitename {
+  font-size: 1.5em;
+}
+
+.header nav {
+  align-self: center;
+}
+
+.main {
+  margin-top: 55px;
+}
+
+
+.main h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.main h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: space-evenly;
+}
+
+.cardsContainer .card {
+  flex-basis: 200px;
+  position: relative;
+  text-align: center;
+}
+
+.card img {
+  min-width: 120px;
+}
+
+.card .cardName {
+  position: absolute;
+  bottom: 6%;
+  left: 0;
+  right: 0;
+  color: #eee;
+}
+
+.card .link--addCard {
+  position: absolute;
+  top: 6%;
+  right: 24%;
+  color: red;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.card .link--removeCard {
+  position: absolute;
+  top: 6%;
+  right: 40%;
+  color: black;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.details {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.details span {
+  font-weight: bold;
+}
+
+.details p {
+  font-size: 1.3em;
+  padding: 10px;
+}
+
+.details ul {
+  font-size: 1.1em;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.details li {
+  list-style: circle;
+  padding: 10px;
+}

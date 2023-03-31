@@ -1,0 +1,27 @@
+{
+  "name": "TT-deck-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-FS-JS/TT-deck-builder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-FS-JS/TT-deck-builder/issues"
+  },
+  "homepage": "https://github.com/O-clock-FS-JS/TT-deck-builder#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^2.7.4",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "pg": "^8"
+  }
+}

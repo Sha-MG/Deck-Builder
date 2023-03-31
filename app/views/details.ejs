@@ -1,0 +1,26 @@
+<%- include('header') %>
+
+<h1>Détails de <%= name %></h1>
+
+<img src="/visuals/<%= visual_name %>" alt="<%= name %> illustration">
+
+<p>
+  Élément: <%= element || "Aucun" %>
+</p>
+
+<p>
+  Niveau : <%= level %>
+</p>
+
+<p>
+  Valeurs
+  <ul>
+    <li>Nord: <%= value_north %></li>
+    <li>Est: <%= value_east %></li>
+    <li>Sud: <%= value_south %></li>
+    <li>Ouest: <%= value_west %></li>
+  </ul>
+</p>
+
+
+<%- include('footer') %>

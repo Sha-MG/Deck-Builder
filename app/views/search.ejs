@@ -1,0 +1,57 @@
+<%- include('header') %>
+
+<h1>Chercher des cartes</h1>
+
+<h3>Par élément</h3>
+<form action="/search/element" method="get">
+  <select name="element" id="element">
+      <option value="null">aucun</option>
+    <option value="tonnerre">tonnerre</option>
+    <option value="terre">terre</option>
+    <option value="glace">glace</option>
+    <option value="vent">vent</option>
+    <option value="poison">poison</option>
+    <option value="feu">feu</option>
+    <option value="eau">eau</option>
+    <option value="sacré">sacré</option>
+  </select>
+  <input type="submit" value="Chercher">
+</form>
+
+<hr>
+
+<h3>Par Niveau</h3>
+<form action="/search/level" method="get">
+  <label for="level">Niveau</label>
+  <input type="number" name="level" id="level" min=0 max=10 value=0>
+
+  <input type="submit" value="Chercher">
+</form>
+
+<hr>
+
+<h3>Par valeur</h3>
+<form action="/search/values" method="get">
+  <label for="direction">Direction</label>
+  <select name="direction" id="direction">
+    <option value="north">Nord</option>
+    <option value="east">Est</option>
+    <option value="south">Sud</option>
+    <option value="west">Ouest</option>
+  </select>
+  
+  <label for="value">Valeur</label>
+  <input type="number" name="value" id="value" min=0 max=10 value=0>
+
+  <input type="submit" value="Chercher">
+</form>
+
+<hr>
+
+<h3>Par nom</h3>
+<form action="/search/name" method="get">
+  <input type="text" name="name" id="name">
+  <input type="submit" value="Chercher">
+</form>
+
+<%- include('footer') %>
